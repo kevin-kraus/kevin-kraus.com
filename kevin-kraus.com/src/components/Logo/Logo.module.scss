@@ -1,0 +1,24 @@
+@import "src/styling/BREAKPOINTS";
+
+.logo {
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  @include BREAKPOINT-SM {
+    width: 350px;
+  }
+  @include BREAKPOINT_M {
+    width: 400px;
+  }
+  @include BREAKPOINT_L {
+    width: 450px;
+  }
+  @include BREAKPOINT_XL {
+    width: 500px;
+  }
+}
+
+
+
+
