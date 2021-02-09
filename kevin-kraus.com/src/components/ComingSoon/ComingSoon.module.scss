@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
+@import 'src/styling/BREAKPOINTS';
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto auto auto;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+
+  h1 {
+    font-size: 24px;
+    @include BREAKPOINT-SM {
+      font-size: 26px;
+    }
+    @include BREAKPOINT_M {
+      font-size: 32px;
+    }
+    @include BREAKPOINT_L {
+      font-size: 40px;
+    }
+    @include BREAKPOINT_XL {
+      font-size: 52px;
+    }
+  }
+
+  h2 {
+    font-size: 18px;
+    @include BREAKPOINT-SM {
+      font-size: 24px;
+    }
+    @include BREAKPOINT_M {
+      font-size: 26px;
+    }
+    @include BREAKPOINT_L {
+      font-size: 32px;
+    }
+    @include BREAKPOINT_XL {
+      font-size: 40px;
+    }
+  }
+
+  .githubLink {
+    font-size: 26px;
+    color: white;
+
+    .githubIcon {
+      padding: 10px;
+      font-size: 50px;
+    }
+  }
+}
