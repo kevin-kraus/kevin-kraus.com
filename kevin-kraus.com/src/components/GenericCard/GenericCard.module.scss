@@ -1,0 +1,34 @@
+@import "../../styling/theme/Theme";
+
+.cardContainer {
+  font-family: $FONT_FAMILY;
+  height: 100%;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 16px;
+  color: $TEXT_LIGHT;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-image: none;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  box-shadow: none;
+  background-color: $LIGHT_GRAY;
+  white-space: pre-wrap;
+  margin-bottom: 1.5rem;
+
+  .textContainer {
+    padding: 1.5rem;
+    h4 {
+      margin: 0.25rem 0 0.5rem 0;
+      font-size: 1.5rem;
+    }
+  }
+
+  .image {
+    max-width: 10%;
+    margin: 1rem;
+  }
+}
