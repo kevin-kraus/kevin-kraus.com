@@ -1,16 +1,21 @@
 import i18n from "i18next";
 import {initReactI18next} from "react-i18next";
+
 import mainCardDE from "./de/MainCard.json";
 import mainCardEN from "./en/MainCard.json";
+import languagesDE from "./de/LanguageSwitcher.json"
+import languagesEN from "./en/LanguageSwitcher.json"
 // the translations
 // (tip move them in a JSON file and import them,
 // or even better, manage them via a UI: https://react.i18next.com/guides/multiple-translation-files#manage-your-translations-with-a-management-gui)
 const resources = {
     de: {
-        MainCard: mainCardDE
+        MainCard: mainCardDE,
+        LanguageSwitcher: languagesDE
     },
     en: {
-        MainCard: mainCardEN
+        MainCard: mainCardEN,
+        LanguageSwitcher: languagesEN
     }
 };
 

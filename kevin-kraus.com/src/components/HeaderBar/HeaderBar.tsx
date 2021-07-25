@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./HeaderBar.module.scss"
 import logo from "../../assets/logo/kkraus_logo.png"
-import {Language, Menu} from "@material-ui/icons";
+import {Menu} from "@material-ui/icons";
+import {LanguageMenu} from "../LanguageMenu/LanguageMenu";
 
 export const HeaderBar = () => {
 
@@ -14,7 +15,7 @@ export const HeaderBar = () => {
                 <img src={logo} />
             </div>
             <div className={styles.headerBarLanguageMenu}>
-                <Language />
+                <LanguageMenu />
             </div>
         </header>
     )
