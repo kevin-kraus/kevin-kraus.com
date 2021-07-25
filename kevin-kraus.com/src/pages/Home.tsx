@@ -1,9 +1,11 @@
 import React from 'react'
-import {ComingSoon} from "../components/ComingSoon/ComingSoon";
+import {Header} from "../components/Header/Header";
 
 
 export function Home() {
-    return(
-        <ComingSoon/>
+    return (
+        <>
+            <Header />
+        </>
     )
 }
