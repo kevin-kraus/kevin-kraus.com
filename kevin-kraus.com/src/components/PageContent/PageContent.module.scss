@@ -1,0 +1,8 @@
+@import "../../styling/BREAKPOINTS";
+
+.container {
+  padding-top: 75px;
+  @include BREAKPOINT-SM {
+    padding-top: 100px;
+  }
+}

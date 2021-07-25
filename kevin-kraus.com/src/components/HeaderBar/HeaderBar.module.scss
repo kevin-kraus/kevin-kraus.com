@@ -1,0 +1,49 @@
+@import "src/styling/theme/Theme";
+@import "src/styling/BREAKPOINTS";
+
+.headerBarContainer {
+  position: fixed;
+  color: $TEXT_LIGHT_GRAY;
+  top: 0;
+  z-index: 1100;
+  margin-bottom: 2rem;
+  padding: 2rem 0.5rem 2rem 0.5rem;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  @include BREAKPOINT-SM {
+    grid-template-columns: 33.3% 33.3% 33.3%;
+  }
+  backdrop-filter: blur(0.6rem);
+  background-color: $BG_COLOR_TRANSPARENT;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .headerBarBurgerMenu {
+    justify-content: flex-start;
+    @include BREAKPOINT-SM {
+      margin-left: 2rem;
+    }
+    &:hover{
+      color: $TEXT_COLOR_PRIMARY;
+    }
+  }
+
+  .headerBarLogo {
+    img {
+      width: 50%;
+    }
+  }
+
+  .headerBarLanguageMenu {
+    justify-content: flex-end;
+    @include BREAKPOINT-SM {
+      margin-right: 2rem;
+    }
+    &:hover{
+      color: $TEXT_COLOR_PRIMARY;
+    }
+  }
+}
